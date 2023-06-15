@@ -1,4 +1,4 @@
-/* General Styles */
+/* General styles */
 * {
   box-sizing: border-box;
   margin: 0;
@@ -21,7 +21,7 @@ ul {
   list-style: none;
 }
 
-/* Navbar Styles */
+/* Navbar styles */
 #navbar {
   position: fixed;
   top: 0;
@@ -29,7 +29,7 @@ ul {
   width: 100%;
   background-color: #fff;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  z-index: 2;
+  z-index: 999;
 }
 
 #navbar ul {
@@ -37,12 +37,11 @@ ul {
   justify-content: space-between;
   align-items: center;
   padding: 0 20px;
-  height: 100px;
+  height: 80px;
 }
 
 #navbar li {
   margin-right: 10px;
-  transition: 0.3s; 
 }
 
 #navbar li:last-child {
@@ -51,210 +50,110 @@ ul {
 
 #navbar a {
   font-weight: bold;
-  font-size: 1.5rem; 
   text-transform: uppercase;
-  display: inline-block; 
-  transition: 0.3s; 
 }
 
 #navbar a:hover {
-  color: #1d00fa;
-  transform: scale(1.1); 
-  transition: 0.3s; 
+  color: #007bff;
 }
 
 /* Welcome section styles */
 #welcome-section {
-  height: 50vh; 
+  height: 100vh;
+  display: flex;
   justify-content: center;
   align-items: center;
   background-color: #f8f8f8;
   text-align: center;
-  color:#fff;
-  background-image: url(welcome_section_background.jpg);
-  background-repeat: no-repeat; 
-  background-size: 100%; 
-  box-shadow: inset 0 0 0 1000px rgba(220,249,0,0.2);
 }
 
 #welcome-section h1 {
-  font-family: Optima,Segoe,Segoe UI,Candara,Calibri,Arial,sans-serif; 
   font-size: 4rem;
-  padding-top: 8rem; 
-  padding-bottom: 1rem; 
-  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
-}
-
-#welcome-section p {
-  margin-top: 2rem;
   margin-bottom: 2rem;
-  color: #fff;
-  text-align: center;
-  font-weight: bold; 
-  font-size: 2rem;
-  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
 }
 
-/* Interaction Styles */ 
-.registerButton, .quizButton{
-  padding: 10px;
-}
-
-.registerButton a, .quizButton a{
-  padding: 15px; 
-  border: 2px solid #dcf900;
-  border-radius: 10px;
-}
-
-#trigger-modal, #trigger-quiz {
-  background-color: #dcf900;
-  color: #000;
-  border: 2px solid #dcf900;
-}
-
-.quizButton a {
-  font-weight: bold;
-  font-size: 1.5rem; 
-  text-transform: uppercase;
-  display: inline-block; 
-  transition: 0.3s; 
-}
-
-.quizButton a:hover {
-  color: #1d00fa;
-  transform: scale(1.1); 
-  transition: 0.3s; 
-}
-
-/* Footer Styles */
-footer {
-  padding: 20px 0;
-  background-color: #dcf900;
-  color: #000;
-  text-align: center;
-  font-weight: bold; 
-  font-size: 1.5rem;
-}
-
-footer a{
-  color: #000; 
-  transition: 0.3s;
-  display: inline-block; 
-}
-
-footer a:hover {
-  color: #1d00fa;
-  transform: scale(1.1);
-  transition: 0.3s; 
-}
-
-/* Registration Form Styles */
-#form-ct {
-  overflow-y: scroll; 
-  width: 50%; 
-  display: none;
-  border: 3px solid #dcf900;
-  border-radius: 10px;
-  z-index: 3; 
-  position: absolute; 
-  top: 50%; 
-  left: 50%; 
-  transform: translate(-50%, -50%); 
-} 
-
-form {
-  padding: 10px;
-  background-color: white;
-}
-
-form h1 {
-  font-size: 20px; 
-  font-weight: bold; 
-  text-align: center;
-}
-
-form label {
-  font-weight: bold;
-}
-
-form input[type=text] {
-  width: 75%; 
-  padding: 15px;
-  margin: 5px 0 22px 0;
-  border: none;
-  background: #f1f1f1;
-}
-
-form input[type=text]:focus {
-  background-color: #ddd;
-  outline: none;
-}
-
-#userInfo, #addressInfo, #contactInfo {
-  white-space: nowrap; 
-}
-
-.buttons {
-  padding: 10px;
-}
-
-.buttons button{
-  padding: 15px; 
-  border: 2px solid #dcf900;
-  border-radius: 10px;
-}
-
-/* Info Sction Styles */ 
-#info-section {
+/* Projects section styles */
+#projects {
   padding: 80px 0;
   background-color: #fff;
 }
 
-.info-tile {
+.project-tile {
   display: flex;
   flex-direction: column;
-  margin-bottom: 30px;
+  align-items: center;
+  margin-bottom: 40px;
 }
 
-#firstColumn {
-  margin-right: 5%;
+.project-tile img {
+  width: 100%;
+  max-width: 600px;
+  height: auto;
+  margin-bottom: 10px;
 }
 
-#firstColumn, #secondColumn{
-  display: inline-block;
-  position: relative; 
-  left: 15%; 
-  padding: 50px; 
-}
-
-.info-tile h2 {
-  align-self: left;
+.project-tile h3 {
   font-size: 2rem;
   margin-bottom: 10px;
 }
 
-.info-tile p {
-  align-self: left;
-  font-size: 1.5rem;
+.project-tile p {
+  font-size: 1.2rem;
   margin-bottom: 20px;
-  width: 500px; 
-  word-wrap: normal;
 }
 
-.info-tile a {
-  color: #000; 
-  align-self: center;
-  font-size: 1.2rem;
-  font-weight: bold;
+.project-tile a {
+  font-size: 1.1rem;
   text-transform: uppercase;
   padding: 10px 20px;
-  background-color: #dcf900;
-  border-radius: 10px;
+  border: 2px solid #007bff;
+  border-radius: 25px;
   transition: all 0.3s ease;
 }
 
-.info-tile a:hover {
-  color: #1d00fa;
-  transform: scale(1.1); 
-  transition: 0.3s; 
+.project-tile a:hover {
+  background-color: #007bff;
+  color: #fff;
+}
+
+/* Footer styles */
+footer {
+  padding: 20px 0;
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+}
+
+footer p {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+}
+
+footer a {
+  color: #fff;
+}
+
+@media screen and (max-width: 768px) {
+  /* Navbar styles for small screens */
+  #navbar ul {
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 100vh;
+  }
+
+  #navbar li {
+    margin: 10px 0;
+  }
+
+  /* Welcome section styles for small screens */
+  #welcome-section {
+    height: auto;
+    padding: 80px 0;
+  }
+
+  #welcome-section h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+  }
 }

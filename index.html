@@ -1,131 +1,37 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Carbon Easy</title>
-    <link rel="stylesheet" href="index.css">
+    <title>Quillan Denton</title>
+    <link rel="stylesheet" href="styles.css">
     <script src="script.js"></script>
   </head>
-
-  <body id="body">
-    <div id="homepage">
-      <header id="navbar">
-        <nav>
-          <ul>
-            <li><img src="logo.png" alt="Carbon Easy Logo" height="100px"></li>
-            <li><a href="#">About Us</a></li>
-            <li><a href= "#">Our Purpose</a></li>
-            <li><a href="#">Our Community</a></li>
-            <li>
-              <div class="registerButton">
-                <a href="#" id="trigger-modal" onclick="showRegistrationForm()">Register</a>
-              </div>
-            </li>
-          </ul>
-        </nav>
-      </header>
-
-      <section id="welcome-section">
-        <h1>Welcome to Carbon Easy</h1>
-        <div id="welcome-description">
-          <p>We want to make the world a healthier place for generations to come. <br> Interested in helping?</p>
-        </div>
-        <div class="quizButton">
-          <a href="#" id="trigger-quiz">Take Our Ecological Impact Quiz</a>
-        </div>
-      </section>
-
-      <section id="info-section">
-        <div>
-          <div id="firstColumn">
-            <div class="info-tile">
-              <h2>Who We Are</h2>
-              <p>We are Carbon Easy, a company dedicated to helping you find your ecological impact. 
-                Through our Ecological Impact Quiz and widespeaad community, we focus on what matters most; the future. </p>
-              <a href="#">Learn More</a>
-            </div>
-            <div class="info-tile">
-              <h2>Our Team</h2>
-              <p>Our team consists of many staff, scientists and members who are helping to advance awareness 
-                about the massive ecological impact of the combined human race, and who are dedicated to the longevity of the planet.  </p>
-              <a href="#">Learn More</a>
-            </div>
-          </div>
-          <div id="secondColumn">
-            <div class="info-tile">
-              <h2>What We Do</h2>
-              <p>We provide you with all the tools necessary to assist you in living a renewed, healthier, more aware lifestyle. 
-                By registering with us, you join a community that is dedicated to achieving a better world. 
-              </p>
-              <a href="#">Learn More</a>
-            </div>
-            <div class="info-tile">
-              <h2>How You Can Help</h2>
-              <p>By registering with us today, you can become part of a worldwide community that assists in achieveing our ecological goals. 
-                We will provide you with all the tools necessary to keep a close eye on your ecological impact. 
-              </p>
-              <a href="#">Learn More</a>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <footer>
-        <p>Want to be part of a better tomorrow? </p>
-        <a id="trigger-footer" onclick="showRegistrationForm()">Register Now!</a>
-      </footer>
-    </div>
-
-    <div id="form-ct">
-      <form>
-        <div id="userInfo">
-          <h1>User Details</h1>
-          <div>
-            <label for="name" id="name-label">Given name:</label>
-            <input type="text" id="name" name="name" placeholder="Please enter your given name" required>
-          </div>
-          <div>
-            <label for="surname" id="surname-label">Surname:</label>
-            <input type="text" id="surname" name="surname" placeholder="Please enter your surname" required>
-          </div>
-          <div>
-            <label for="username" id="username-label">Username:</label>
-            <input type="text" id="username" name="username" placeholder="Please enter your username" required>
-          </div>
-          <div>
-            <label for="password" id="password-label">Password:</label>
-            <input type="text" id="password" name="password" placeholder="Please enter your username" required>
-          </div>
-        </div>
-
-        <div id="addressInfo">
-          <h1>Addresses</h1>
-          <div>
-            <label for="home-address" id="home-address-label">Home Address:</label>
-            <input type="text" id="home-address" name="home-address" placeholder="Please enter your home address" required>
-          </div>
-          <div>
-            <label for="work-address" id="work-address-label">Work Address:</label>
-            <input type="text" id="work-address" name="work-address" placeholder="Please enter your work address" required>
-          </div>
-        </div>
-
-        <div id="contactInfo"> 
-          <h1>Contacts</h1>
-          <div>
-            <label for="mobile-number" id="mobile-number-label">Mobile Number:</label>
-            <input type="text" id="mobile-number" name="mobile-number" placeholder="Please enter your mobile number" required>
-          </div> 
-          <div>
-            <label for="email" id="email-label">Email:</label>
-            <input type="text" id="email" name="email" placeholder="Please enter your email" required>
-          </div>
-        </div>
-
-        <div class="buttons">
-          <button onclick="hideRegistrationForm()">Close</button>
-          <button>Submit</button>
-        </div>
-      </form>
-    </div>
+  <body>
+    <header id="navbar">
+      <nav>
+        <ul>
+          <li><a href="#welcome-section">Welcome</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#profile-link" target="_blank">Profile</a></li>
+        </ul>
+      </nav>
+    </header>
+    <section id="welcome-section">
+      <h1>Welcome to My Portfolio</h1>
+    </section>
+    <section id="projects">
+      <div class="project-tile">
+        <h2>Project 1</h2>
+        <p>Description of project 1.</p>
+        <a href="#">Link to Project 1</a>
+      </div>
+      <div class="project-tile">
+        <h2>Project 2</h2>
+        <p>Description of project 2.</p>
+        <a href="#">Link to Project 2</a>
+      </div>
+    </section>
+    <footer>
+      <a href="#" id="profile-link" target="_blank">My GitHub Profile</a>
+    </footer>
   </body>
 </html>
