@@ -1,0 +1,260 @@
+/* General Styles */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #333;
+}
+
+a {
+  text-decoration: none;
+  color: #333;
+}
+
+ul {
+  list-style: none;
+}
+
+/* Navbar Styles */
+#navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  z-index: 2;
+}
+
+#navbar ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+  height: 100px;
+}
+
+#navbar li {
+  margin-right: 10px;
+  transition: 0.3s; 
+}
+
+#navbar li:last-child {
+  margin-right: 0;
+}
+
+#navbar a {
+  font-weight: bold;
+  font-size: 1.5rem; 
+  text-transform: uppercase;
+  display: inline-block; 
+  transition: 0.3s; 
+}
+
+#navbar a:hover {
+  color: #1d00fa;
+  transform: scale(1.1); 
+  transition: 0.3s; 
+}
+
+/* Welcome section styles */
+#welcome-section {
+  height: 50vh; 
+  justify-content: center;
+  align-items: center;
+  background-color: #f8f8f8;
+  text-align: center;
+  color:#fff;
+  background-image: url(welcome_section_background.jpg);
+  background-repeat: no-repeat; 
+  background-size: 100%; 
+  box-shadow: inset 0 0 0 1000px rgba(220,249,0,0.2);
+}
+
+#welcome-section h1 {
+  font-family: Optima,Segoe,Segoe UI,Candara,Calibri,Arial,sans-serif; 
+  font-size: 4rem;
+  padding-top: 8rem; 
+  padding-bottom: 1rem; 
+  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+}
+
+#welcome-section p {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  color: #fff;
+  text-align: center;
+  font-weight: bold; 
+  font-size: 2rem;
+  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+}
+
+/* Interaction Styles */ 
+.registerButton, .quizButton{
+  padding: 10px;
+}
+
+.registerButton a, .quizButton a{
+  padding: 15px; 
+  border: 2px solid #dcf900;
+  border-radius: 10px;
+}
+
+#trigger-modal, #trigger-quiz {
+  background-color: #dcf900;
+  color: #000;
+  border: 2px solid #dcf900;
+}
+
+.quizButton a {
+  font-weight: bold;
+  font-size: 1.5rem; 
+  text-transform: uppercase;
+  display: inline-block; 
+  transition: 0.3s; 
+}
+
+.quizButton a:hover {
+  color: #1d00fa;
+  transform: scale(1.1); 
+  transition: 0.3s; 
+}
+
+/* Footer Styles */
+footer {
+  padding: 20px 0;
+  background-color: #dcf900;
+  color: #000;
+  text-align: center;
+  font-weight: bold; 
+  font-size: 1.5rem;
+}
+
+footer a{
+  color: #000; 
+  transition: 0.3s;
+  display: inline-block; 
+}
+
+footer a:hover {
+  color: #1d00fa;
+  transform: scale(1.1);
+  transition: 0.3s; 
+}
+
+/* Registration Form Styles */
+#form-ct {
+  overflow-y: scroll; 
+  width: 50%; 
+  display: none;
+  border: 3px solid #dcf900;
+  border-radius: 10px;
+  z-index: 3; 
+  position: absolute; 
+  top: 50%; 
+  left: 50%; 
+  transform: translate(-50%, -50%); 
+} 
+
+form {
+  padding: 10px;
+  background-color: white;
+}
+
+form h1 {
+  font-size: 20px; 
+  font-weight: bold; 
+  text-align: center;
+}
+
+form label {
+  font-weight: bold;
+}
+
+form input[type=text] {
+  width: 75%; 
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  border: none;
+  background: #f1f1f1;
+}
+
+form input[type=text]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+#userInfo, #addressInfo, #contactInfo {
+  white-space: nowrap; 
+}
+
+.buttons {
+  padding: 10px;
+}
+
+.buttons button{
+  padding: 15px; 
+  border: 2px solid #dcf900;
+  border-radius: 10px;
+}
+
+/* Info Sction Styles */ 
+#info-section {
+  padding: 80px 0;
+  background-color: #fff;
+}
+
+.info-tile {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 30px;
+}
+
+#firstColumn {
+  margin-right: 5%;
+}
+
+#firstColumn, #secondColumn{
+  display: inline-block;
+  position: relative; 
+  left: 15%; 
+  padding: 50px; 
+}
+
+.info-tile h2 {
+  align-self: left;
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+.info-tile p {
+  align-self: left;
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+  width: 500px; 
+  word-wrap: normal;
+}
+
+.info-tile a {
+  color: #000; 
+  align-self: center;
+  font-size: 1.2rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  padding: 10px 20px;
+  background-color: #dcf900;
+  border-radius: 10px;
+  transition: all 0.3s ease;
+}
+
+.info-tile a:hover {
+  color: #1d00fa;
+  transform: scale(1.1); 
+  transition: 0.3s; 
+}
