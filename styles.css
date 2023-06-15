@@ -59,7 +59,7 @@ ul {
 
 /* Welcome section styles */
 #welcome-section {
-  height: 100vh;
+  height: 50vh;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -68,8 +68,8 @@ ul {
 }
 
 #welcome-section h1 {
+  margin-top: 4rem;
   font-size: 4rem;
-  margin-bottom: 2rem;
 }
 
 /* Projects section styles */
@@ -153,7 +153,7 @@ footer a {
   }
 
   #welcome-section h1 {
+    margin-top: 3rem;
     font-size: 3rem;
-    margin-bottom: 1rem;
   }
 }
