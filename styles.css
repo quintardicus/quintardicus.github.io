@@ -126,7 +126,7 @@ img {
   left: 0;
   right: 0;
   bottom: 0;
-  background: linear-gradient(135deg, rgba(224, 242, 254, 0.96) 0%, rgba(186, 230, 253, 0.96) 30%, rgba(147, 197, 253, 0.96) 100%);
+  background: linear-gradient(135deg, rgba(219, 234, 254, 0.95) 0%, rgba(224, 231, 255, 0.95) 35%, rgba(232, 221, 255, 0.95) 65%, rgba(204, 251, 241, 0.95) 100%);
 }
 
 .welcome-content {
@@ -627,7 +627,7 @@ img {
   font-size: 1.75rem;
 }
 
-.organization {
+.organisation {
   color: var(--primary-color);
   font-weight: 600;
   margin-bottom: 0.25rem;
@@ -637,6 +637,35 @@ img {
   color: var(--text-light);
   line-height: 1.6;
   margin-bottom: 0.5rem;
+}
+
+/* Film & Performance section */
+#film {
+  padding: 100px 0;
+  background: linear-gradient(180deg, #fef3c7 0%, #f0fdf4 100%);
+}
+
+#film .experience-header {
+  margin-bottom: 0.75rem;
+}
+
+#film .experience-item > p {
+  margin-bottom: 0.5rem;
+}
+
+#film .experience-item > ul {
+  margin-top: 0.5rem;
+}
+
+.film-description {
+  margin-top: 1rem;
+  padding: 1rem;
+  background-color: rgba(254, 243, 199, 0.3);
+  border-radius: 8px;
+  color: var(--text-light);
+  font-size: 0.95rem;
+  line-height: 1.7;
+  border-left: 3px solid #fbbf24;
 }
 
 /* Gallery section */

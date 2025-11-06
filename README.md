@@ -5,12 +5,10 @@ This is your enhanced portfolio website with professional image integration.
 ## Files Included
 
 ### HTML Files:
-- **index_enhanced.html** - New enhanced version with all images integrated
-- **index.html** - Original version (backup)
+- **index.html** - Portfolio website with all sections including Film & Performance
 
 ### CSS Files:
-- **styles_enhanced.css** - Enhanced styles for the new version with image layouts
-- **styles.css** - Original styles (backup)
+- **styles.css** - Complete stylesheet with all section styling
 
 ### JavaScript:
 - **script.js** - Typewriter effect script (unchanged)
@@ -25,18 +23,19 @@ This is your enhanced portfolio website with professional image integration.
 
 ## How to Use
 
-### Option 1: Use the Enhanced Version (Recommended)
-Simply open **index_enhanced.html** in your browser. This version includes:
+### Option 1: View Locally
+Simply open **index.html** in your browser. This version includes:
 - Professional image integration throughout
-- New Gallery section showcasing your work
+- Film & Performance Experience section
+- Gallery section showcasing your work
 - Enhanced visual design
 - Responsive layouts for all screen sizes
 
 ### Option 2: Deploy to GitHub Pages
-1. Upload all files to your GitHub repository
-2. Rename `index_enhanced.html` to `index.html` (or update your repository settings)
-3. Ensure `styles_enhanced.css` and all images are in the same directory
-4. Enable GitHub Pages in repository settings
+1. Ensure all files are in your GitHub repository
+2. Push your changes to the main branch
+3. Enable GitHub Pages in repository settings
+4. Your site will be live at your GitHub Pages URL
 
 ## What's New in the Enhanced Version
 
@@ -57,31 +56,46 @@ Simply open **index_enhanced.html** in your browser. This version includes:
 - Featured "Choir of the World" award with large photo
 - Prominent display of your most significant achievement
 
-### 5. New Gallery Section
+### 5. Film & Performance Experience Section
+- Comprehensive showcase of your performance career
+- Tinā (2024) feature film credit with detailed description
+- New Zealand Youth Choir experience
+- Extra work (Shortland Street, East of Eden)
+- New Zealand Opera performances
+- Professional layout with consistent styling
+- Gradient background transitioning from golden to mint tones
+
+### 6. New Gallery Section
 - Dedicated photo gallery
-- 4 professional photos with hover effects
+- 8 professional photos with hover effects
 - Captions on hover
 - Responsive grid layout
 
-### 6. Enhanced Styling
+### 7. Enhanced Styling
 - Professional shadows and hover effects
 - Smooth transitions
 - Optimized image display
 - Mobile-responsive design
+- Dedicated styling for Film & Performance section
 
 ## File Structure for Deployment
 
 ```
 your-website/
-├── index_enhanced.html (or rename to index.html)
-├── styles_enhanced.css
+├── index.html
+├── styles.css
 ├── script.js
 ├── header_background.jpg
-├── IMG_2528.jpeg
-├── IMG_2195.jpeg
-├── IMG_2245.jpeg
-├── IMG_4263.jpeg
-└── 1G8A1712.jpeg
+├── headshot.jpeg (professional photo)
+├── bmll.jpeg (team photo)
+├── victory.jpeg (award ceremony)
+├── graduation.jpeg (university)
+├── rehearsal.jpeg (choir rehearsal)
+├── barnsley.jpeg (choir meeting)
+├── performance.jpeg (recital)
+├── trophy.jpeg (award trophy)
+├── choir.jpeg (group photo)
+└── corporate.png (headshot)
 ```
 
 ## Browser Compatibility
@@ -100,4 +114,14 @@ your-website/
 ---
 
 **Created:** November 2024
-**Last Updated:** November 6, 2025
+**Last Updated:** November 7, 2025
+
+## Recent Updates
+- Added Film & Performance Experience section featuring:
+  - Tinā (2024) feature film credit
+  - Choral Singer position with New Zealand Youth Choir
+  - Extra work for Fresh Talent Limited
+  - New Zealand Opera performances
+- Added navigation link for Film & Performance section
+- Added CSS styling for film section with gradient background
+- Updated README documentation
