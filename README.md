@@ -7,17 +7,16 @@ A professional portfolio website showcasing technical skills, work experience, e
 ### Core Files:
 - **index.html** - Main portfolio website with all sections
 - **styles.css** - Complete stylesheet with responsive design and modern styling
-- **script.js** - Typewriter effect functionality for dynamic text
+- **script.js** - Mobile menu, active-section nav highlighting, gallery lightbox and footer year
 
 ### Images:
-- **header_background.jpg** - Hero section background image
 - **headshot.jpeg** - Professional headshot (About section)
 - **bmll.jpeg** - BMLL team photo (Experience section & Gallery)
 - **graduation.jpeg** - University of Auckland graduation photo (Education section)
 - **victory.jpeg** - Choir of the World award ceremony (Achievements & Gallery)
-- **tina.png** - Tinā feature film image (Film & Performance section)
+- **tina.jpg** - Tinā feature film image (Film & Performance section)
 - **nzyc.jpeg** - New Zealand Youth Choir photo (Film & Performance section)
-- **corporate.png** - Professional headshot (Gallery)
+- **corporate.jpg** - Professional headshot (Gallery)
 - **rehearsal.jpeg** - Choir rehearsal photo (Gallery)
 - **barnsley.jpeg** - Choir meeting photo (Gallery)
 - **performance.jpeg** - Eisteddfod recital photo (Gallery)
@@ -38,9 +37,9 @@ Simply open **index.html** in your browser to view the portfolio website locally
 ## Website Sections
 
 ### 1. Welcome Section
-- Gradient overlay background with hero image
+- Gradient background
 - Professional title and location information
-- Smooth parallax scrolling effect
+- "View my work" / "Get in touch" buttons and GitHub/LinkedIn links
 
 ### 2. About Section
 - Professional headshot with side-by-side layout
@@ -88,7 +87,8 @@ Five featured projects:
 
 ### 9. Gallery Section
 - 8 professional photos in responsive grid layout
-- Hover effects reveal captions
+- Hover effects reveal captions (always shown on touch screens)
+- Click or press Enter on a photo to open a full-size lightbox (arrow keys to browse, Esc to close)
 - Images from professional work and musical career
 
 ### 10. Contact Section
@@ -96,7 +96,7 @@ Five featured projects:
 - Clickable email links with hover effects
 
 ### 11. Footer
-- Copyright information
+- Copyright information (year updates automatically)
 - Social media links (GitHub, LinkedIn)
 - Responsive design
 
@@ -111,11 +111,11 @@ Five featured projects:
 ### Responsive Design
 - Fully responsive across all screen sizes
 - Breakpoints at 968px, 768px, and 480px
-- Mobile-optimized navigation
+- Collapsible hamburger menu on tablets and phones
 - Grid layouts adapt to screen size
 
 ### Interactive Elements
-- Sticky navigation bar with smooth scrolling
+- Sticky navigation bar with smooth scrolling and current-section highlighting
 - Hover effects on all interactive elements
 - Gallery with image zoom and caption reveal
 - Animated skill tags
@@ -129,14 +129,13 @@ quintardicus.github.io/
 ├── styles.css              # Complete stylesheet
 ├── script.js               # JavaScript functionality
 ├── README.md               # This documentation file
-├── header_background.jpg   # Hero section background
 ├── headshot.jpeg           # Professional headshot (About)
 ├── bmll.jpeg               # BMLL team photo (Experience & Gallery)
 ├── graduation.jpeg         # University graduation (Education)
 ├── victory.jpeg            # Award ceremony (Achievements & Gallery)
-├── tina.png                # Film image (Film & Performance)
+├── tina.jpg                # Film image (Film & Performance)
 ├── nzyc.jpeg               # Choir photo (Film & Performance)
-├── corporate.png           # Professional headshot (Gallery)
+├── corporate.jpg           # Professional headshot (Gallery)
 ├── rehearsal.jpeg          # Choir rehearsal (Gallery)
 ├── barnsley.jpeg           # Choir meeting (Gallery)
 ├── performance.jpeg        # Recital photo (Gallery)
@@ -161,15 +160,15 @@ quintardicus.github.io/
 
 ### Performance
 - Optimized images for web display
-- CSS-only animations (no JavaScript animation overhead)
+- CSS-only animations, disabled for visitors who prefer reduced motion
 - Smooth scrolling with hardware acceleration
-- Lazy loading compatible
+- Below-the-fold images are lazy-loaded with explicit dimensions (no layout shift)
 
 ## Customization
 
 ### Updating Content
 1. **Personal Information**: Edit the content directly in [index.html](index.html)
-2. **Styling**: Modify CSS variables in [styles.css](styles.css) (lines 2-15) for color scheme changes
+2. **Styling**: Modify CSS variables in [styles.css](styles.css) (top of file) for color scheme changes
 3. **Images**: Replace image files with same filenames, or update references in HTML
 
 ### CSS Variables (for easy theming)
@@ -190,6 +189,7 @@ The website includes smooth scrolling navigation to all sections:
 - Education
 - Skills
 - Projects
+- Achievements
 - Film & Performance
 - Gallery
 - Contact
@@ -198,4 +198,4 @@ The website includes smooth scrolling navigation to all sections:
 
 **Repository**: [quintardicus.github.io](https://github.com/quintardicus/quintardicus.github.io)
 **Created**: November 2024
-**Last Updated**: November 7, 2025
+**Last Updated**: October 23, 2026

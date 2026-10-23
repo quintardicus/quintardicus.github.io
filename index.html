@@ -4,19 +4,39 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Quillan Denton - Quantitative Analyst</title>
+    <meta name="description" content="Quillan Denton: Junior Quantitative Analyst at BMLL in London, Computer Science graduate from The University of Auckland, and former New Zealand Youth Choir singer.">
+    <meta name="author" content="Quillan Denton">
+    <meta name="theme-color" content="#0ea5e9">
+    <link rel="canonical" href="https://quintardicus.github.io/">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Quillan Denton - Quantitative Analyst">
+    <meta property="og:description" content="Junior Quantitative Analyst at BMLL, Computer Science graduate and choral singer.">
+    <meta property="og:url" content="https://quintardicus.github.io/">
+    <meta property="og:image" content="https://quintardicus.github.io/corporate.jpg">
+    <meta name="twitter:card" content="summary">
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%230ea5e9'/%3E%3Ctext x='50%25' y='54%25' dominant-baseline='middle' text-anchor='middle' font-family='Arial,sans-serif' font-weight='700' font-size='30' fill='white'%3EQD%3C/text%3E%3C/svg%3E">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Inter:wght@300;400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap">
     <link rel="stylesheet" href="styles.css">
-    <script src="script.js"></script>
+    <script src="script.js" defer></script>
   </head>
   <body>
+    <a href="#about" class="skip-link">Skip to content</a>
     <header id="navbar">
-      <nav>
-        <ul>
+      <nav aria-label="Main">
+        <a href="#welcome-section" class="nav-brand">Quillan Denton</a>
+        <button class="nav-toggle" aria-label="Open menu" aria-expanded="false" aria-controls="nav-links">
+          <span></span><span></span><span></span>
+        </button>
+        <ul id="nav-links">
           <li><a href="#welcome-section">Home</a></li>
           <li><a href="#about">About</a></li>
           <li><a href="#experience">Experience</a></li>
           <li><a href="#education">Education</a></li>
           <li><a href="#skills">Skills</a></li>
           <li><a href="#projects">Projects</a></li>
+          <li><a href="#achievements">Achievements</a></li>
           <li><a href="#film">Film & Performance</a></li>
           <li><a href="#gallery">Gallery</a></li>
           <li><a href="#contact">Contact</a></li>
@@ -24,12 +44,22 @@
       </nav>
     </header>
 
+    <main>
     <section id="welcome-section">
       <div class="welcome-overlay"></div>
       <div class="welcome-content">
         <h1>Quillan Denton</h1>
         <p class="subtitle">Junior Quantitative Analyst | Computer Science Graduate</p>
         <p class="location">Auckland, NZ | London, UK</p>
+        <div class="hero-actions">
+          <a href="#projects" class="btn btn-primary">View my work</a>
+          <a href="#contact" class="btn btn-secondary">Get in touch</a>
+        </div>
+        <div class="hero-social">
+          <a href="https://github.com/quintardicus" target="_blank" rel="noopener noreferrer">GitHub</a>
+          <span aria-hidden="true">·</span>
+          <a href="https://www.linkedin.com/in/quillan-denton/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+        </div>
       </div>
     </section>
 
@@ -38,7 +68,7 @@
         <h2 class="section-title">About Me</h2>
         <div class="about-content-wrapper">
           <div class="about-image">
-            <img src="headshot.jpeg" alt="Quillan Denton Professional Photo">
+            <img src="headshot.jpeg" width="724" height="1086" alt="Quillan Denton Professional Photo">
           </div>
           <div class="about-text">
             <p>I'm a Computer Science graduate from The University of Auckland, currently working as a Junior Quantitative Analyst at BMLL in London. I specialise in data analysis, software development, and building scalable applications with modern technologies.</p>
@@ -61,7 +91,7 @@
                 <p class="date">August 2025 - Present</p>
               </div>
               <div class="experience-image">
-                <img src="bmll.jpeg" alt="BMLL team photo">
+                <img loading="lazy" decoding="async" src="bmll.jpeg" width="1170" height="808" alt="BMLL team photo">
               </div>
             </div>
             <ul>
@@ -88,7 +118,7 @@
                 <p class="achievement">Academic Potential Scholarship - For academic achievement, demonstrated leadership potential and extracurricular achievements.</p>
               </div>
               <div class="education-image">
-                <img src="graduation.jpeg" alt="University of Auckland Graduation">
+                <img loading="lazy" decoding="async" src="graduation.jpeg" width="724" height="1086" alt="University of Auckland Graduation">
               </div>
             </div>
           </div>
@@ -161,7 +191,7 @@
             <h3>Event Management Platform</h3>
             <p class="tech-stack">React, Node.js, DynamoDB, Real-time APIs, JavaScript</p>
             <p>A free event management application, enabling users to create and join a variety of events. Led development of a scalable application with real-time data synchronisation, efficient API design, and database optimisation for multiple concurrent users.</p>
-            <a href="https://github.com/uoa-compsci399-s2-2023/capstone-project-team-27" target="_blank" class="project-link">View on GitHub</a>
+            <a href="https://github.com/uoa-compsci399-s2-2023/capstone-project-team-27" target="_blank" class="project-link" rel="noopener noreferrer">View on GitHub</a>
           </div>
 
           <div class="project-tile">
@@ -180,7 +210,7 @@
             <h3>Music Library Web Application</h3>
             <p class="tech-stack">Python, Flask, Jinja, SQL/SQLite, HTML/CSS</p>
             <p>A Music Library web application for browsing albums, artists, and tracks. Implemented MVC and Repository design patterns for scalable architecture. Developed with comprehensive testing and SQL-based persistent storage.</p>
-            <a href="https://github.com/UoA-CS-Sindhwani-CS235-S2-2022/cs235_2022_assignment-qden138_jbau595" target="_blank" class="project-link">View on GitHub</a>
+            <a href="https://github.com/UoA-CS-Sindhwani-CS235-S2-2022/cs235_2022_assignment-qden138_jbau595" target="_blank" class="project-link" rel="noopener noreferrer">View on GitHub</a>
           </div>
         </div>
       </div>
@@ -192,7 +222,7 @@
         <div class="achievements-content">
           <div class="achievement-item featured">
             <div class="achievement-image">
-              <img src="victory.jpeg" alt="Choir of the World award ceremony">
+              <img loading="lazy" decoding="async" src="victory.jpeg" width="703" height="523" alt="Choir of the World award ceremony">
             </div>
             <div class="achievement-text">
               <h3>Choir of the World</h3>
@@ -229,7 +259,7 @@
                 <p class="date">2024 - 2025</p>
               </div>
               <div class="experience-image">
-                <img src="tina.png" alt="Tinā Film">
+                <img loading="lazy" decoding="async" src="tina.jpg" width="1440" height="601" alt="Tinā Film">
               </div>
             </div>
             <p><strong>Role:</strong> Choir Member (Soundtrack & On-Screen Performance)</p>
@@ -248,7 +278,7 @@
                 <p class="date">2020 - 2025</p>
               </div>
               <div class="experience-image">
-                <img src="nzyc.jpeg" alt="New Zealand Youth Choir">
+                <img loading="lazy" decoding="async" src="nzyc.jpeg" width="1024" height="768" alt="New Zealand Youth Choir">
               </div>
             </div>
             <p><strong>New Zealand Youth Choir</strong></p>
@@ -279,50 +309,50 @@
         <h2 class="section-title">Gallery</h2>
         <p class="gallery-intro">A glimpse into my professional and musical journey.</p>
         <div class="gallery-grid">
-          <div class="gallery-item">
-            <img src="corporate.png" alt="Headshot">
+          <div class="gallery-item" tabindex="0" role="button">
+            <img loading="lazy" decoding="async" src="corporate.jpg" width="619" height="619" alt="Headshot">
             <div class="gallery-overlay">
-            <p>Quillan Denton</p>
+              <p>Quillan Denton</p>
             </div>
           </div>
-          <div class="gallery-item">
-            <img src="rehearsal.jpeg" alt="Barnsley & New Zealand Youth Choir Rehearsal">
+          <div class="gallery-item" tabindex="0" role="button">
+            <img loading="lazy" decoding="async" src="rehearsal.jpeg" width="1086" height="724" alt="Barnsley & New Zealand Youth Choir Rehearsal">
             <div class="gallery-overlay">
               <p>New Zealand Youth Choir Performance</p>
             </div>
           </div>
-          <div class="gallery-item">
-            <img src="barnsley.jpeg" alt="Barnsley & New Zealand Youth Choir Initial Meeting">
+          <div class="gallery-item" tabindex="0" role="button">
+            <img loading="lazy" decoding="async" src="barnsley.jpeg" width="1086" height="724" alt="Barnsley & New Zealand Youth Choir Initial Meeting">
             <div class="gallery-overlay">
               <p>Choir Rehearsal</p>
             </div>
           </div>
-          <div class="gallery-item">
-            <img src="bmll.jpeg" alt="BMLL Team">
+          <div class="gallery-item" tabindex="0" role="button">
+            <img loading="lazy" decoding="async" src="bmll.jpeg" width="1170" height="808" alt="BMLL Team">
             <div class="gallery-overlay">
               <p>BMLL Team</p>
             </div>
           </div>
-          <div class="gallery-item">
-            <img src="victory.jpeg" alt="Award Ceremony">
+          <div class="gallery-item" tabindex="0" role="button">
+            <img loading="lazy" decoding="async" src="victory.jpeg" width="703" height="523" alt="Award Ceremony">
             <div class="gallery-overlay">
               <p>Choir of the World 2025</p>
             </div>
           </div>
-          <div class="gallery-item">
-            <img src="performance.jpeg" alt="Recital">
+          <div class="gallery-item" tabindex="0" role="button">
+            <img loading="lazy" decoding="async" src="performance.jpeg" width="1024" height="768" alt="Recital">
             <div class="gallery-overlay">
               <p>Llangollen International Eisteddfod Recital</p>
             </div>
           </div>
-          <div class="gallery-item">
-            <img src="trophy.jpeg" alt="Trophy">
+          <div class="gallery-item" tabindex="0" role="button">
+            <img loading="lazy" decoding="async" src="trophy.jpeg" width="724" height="1086" alt="Trophy">
             <div class="gallery-overlay">
               <p>Llangollen International Eisteddfod Choir of the World Trophy</p>
             </div>
           </div>
-          <div class="gallery-item">
-            <img src="choir.jpeg" alt="Choir">
+          <div class="gallery-item" tabindex="0" role="button">
+            <img loading="lazy" decoding="async" src="choir.jpeg" width="1200" height="550" alt="Choir">
             <div class="gallery-overlay">
               <p>New Zealand Youth Choir 2025</p>
             </div>
@@ -347,17 +377,28 @@
         </div>
       </div>
     </section>
+    </main>
 
     <footer>
       <div class="container">
         <div class="footer-content">
-          <p>&copy; 2024 Quillan Denton. All rights reserved.</p>
+          <p>&copy; <span id="year">2026</span> Quillan Denton. All rights reserved.</p>
           <div class="social-links">
-            <a href="https://github.com/quintardicus" id="profile-link" target="_blank">GitHub</a>
-            <a href="https://www.linkedin.com/in/quillan-denton/" id="profile-link" target="_blank">LinkedIn</a>
+            <a href="https://github.com/quintardicus" target="_blank" rel="noopener noreferrer">GitHub</a>
+            <a href="https://www.linkedin.com/in/quillan-denton/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
           </div>
         </div>
       </div>
     </footer>
+
+    <div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Image viewer" hidden>
+      <button class="lightbox-close" aria-label="Close">&times;</button>
+      <button class="lightbox-nav lightbox-prev" aria-label="Previous image">&#8249;</button>
+      <figure>
+        <img src="" alt="">
+        <figcaption></figcaption>
+      </figure>
+      <button class="lightbox-nav lightbox-next" aria-label="Next image">&#8250;</button>
+    </div>
   </body>
 </html>
