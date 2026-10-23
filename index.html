@@ -4,19 +4,39 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Quillan Denton - Quantitative Analyst</title>
+    <meta name="description" content="Quillan Denton: Junior Quantitative Analyst at BMLL in London, Computer Science graduate from The University of Auckland, and former New Zealand Youth Choir singer.">
+    <meta name="author" content="Quillan Denton">
+    <meta name="theme-color" content="#0ea5e9">
+    <link rel="canonical" href="https://quintardicus.github.io/">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Quillan Denton - Quantitative Analyst">
+    <meta property="og:description" content="Junior Quantitative Analyst at BMLL, Computer Science graduate and choral singer.">
+    <meta property="og:url" content="https://quintardicus.github.io/">
+    <meta property="og:image" content="https://quintardicus.github.io/corporate.jpg">
+    <meta name="twitter:card" content="summary">
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%230ea5e9'/%3E%3Ctext x='50%25' y='54%25' dominant-baseline='middle' text-anchor='middle' font-family='Arial,sans-serif' font-weight='700' font-size='30' fill='white'%3EQD%3C/text%3E%3C/svg%3E">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Inter:wght@300;400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap">
     <link rel="stylesheet" href="styles.css">
-    <script src="script.js"></script>
+    <script src="script.js" defer></script>
   </head>
   <body>
+    <a href="#about" class="skip-link">Skip to content</a>
     <header id="navbar">
-      <nav>
-        <ul>
+      <nav aria-label="Main">
+        <a href="#welcome-section" class="nav-brand">Quillan Denton</a>
+        <button class="nav-toggle" aria-label="Open menu" aria-expanded="false" aria-controls="nav-links">
+          <span></span><span></span><span></span>
+        </button>
+        <ul id="nav-links">
           <li><a href="#welcome-section">Home</a></li>
           <li><a href="#about">About</a></li>
           <li><a href="#experience">Experience</a></li>
           <li><a href="#education">Education</a></li>
           <li><a href="#skills">Skills</a></li>
           <li><a href="#projects">Projects</a></li>
+          <li><a href="#achievements">Achievements</a></li>
           <li><a href="#film">Film & Performance</a></li>
           <li><a href="#gallery">Gallery</a></li>
           <li><a href="#contact">Contact</a></li>
@@ -24,12 +44,22 @@
       </nav>
     </header>
 
+    <main>
     <section id="welcome-section">
       <div class="welcome-overlay"></div>
       <div class="welcome-content">
         <h1>Quillan Denton</h1>
         <p class="subtitle">Junior Quantitative Analyst | Computer Science Graduate</p>
         <p class="location">Auckland, NZ | London, UK</p>
+        <div class="hero-actions">
+          <a href="#projects" class="btn btn-primary">View my work</a>
+          <a href="#contact" class="btn btn-secondary">Get in touch</a>
+        </div>
+        <div class="hero-social">
+          <a href="https://github.com/quintardicus" target="_blank" rel="noopener noreferrer">GitHub</a>
+          <span aria-hidden="true">·</span>
+          <a href="https://www.linkedin.com/in/quillan-denton/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+        </div>
       </div>
     </section>
 
@@ -38,12 +68,12 @@
         <h2 class="section-title">About Me</h2>
         <div class="about-content-wrapper">
           <div class="about-image">
-            <img src="headshot.jpeg" alt="Quillan Denton Professional Photo">
+            <img src="headshot.jpeg" width="724" height="1086" alt="Professional headshot of Quillan Denton">
           </div>
           <div class="about-text">
             <p>I'm a Computer Science graduate from The University of Auckland, currently working as a Junior Quantitative Analyst at BMLL in London. I specialise in data analysis, software development, and building scalable applications with modern technologies.</p>
             <p>With a strong foundation in programming languages including Python, Java, C++, and JavaScript, I've developed expertise in machine learning frameworks, web development, and cloud technologies. I'm passionate about leveraging technology to solve complex problems in financial data and analytics.</p>
-            <p>Beyond my technical work, I'm an accomplished musician and proud former member of the New Zealand Youth Choir. During my time in the New Zealand Youth Choir, we were honoured as "Choir of the World" at the Llangollen International Musical Eisteddfod in 2025 and as winners of the "Grand Prix of Nations" at the European Choir Games.</p>
+            <p>Beyond my technical work, I'm an accomplished musician and proud former member of the New Zealand Youth Choir. During my time with the choir, we were named "Choir of the World" at the 2025 Llangollen International Musical Eisteddfod and won the "Grand Prix of Nations" at the European Choir Games.</p>
           </div>
         </div>
       </div>
@@ -58,16 +88,16 @@
               <div class="experience-text">
                 <h3>Junior Quantitative Analyst</h3>
                 <p class="company">BMLL | London, UK</p>
-                <p class="date">August 2025 - Present</p>
+                <p class="date">August 2025 – Present</p>
               </div>
               <div class="experience-image">
-                <img src="bmll.jpeg" alt="BMLL team photo">
+                <img loading="lazy" decoding="async" src="bmll.jpeg" width="1170" height="808" alt="BMLL team photo">
               </div>
             </div>
             <ul>
-              <li>Support the onboarding of data from new exchanges, ensuring smooth integration, accuracy, and alignment with internal data standards and workflows</li>
-              <li>Collaborate on internal client usage assessments and analytical reviews to identify trends, optimise data utilisation, and support informed decision-making across teams</li>
-              <li>Maintain and monitor exchange data quality across all exchanges, indices, and securities to ensure consistency, reliability, and compliance with established quality benchmarks</li>
+              <li>Support the onboarding of data from new exchanges, ensuring smooth integration, accuracy, and alignment with internal data standards and workflows.</li>
+              <li>Collaborate on internal client usage assessments and analytical reviews to identify trends, optimise data utilisation, and support informed decision-making across teams.</li>
+              <li>Maintain and monitor data quality across all exchanges, indices, and securities to ensure consistency, reliability, and compliance with established quality benchmarks.</li>
             </ul>
           </div>
         </div>
@@ -83,12 +113,12 @@
               <div class="education-text">
                 <h3>Bachelor of Science in Computer Science</h3>
                 <p class="institution">The University of Auckland</p>
-                <p class="date">March 2020 - September 2024</p>
-                <p class="education-description">Bachelor of Science focused on software development, data analysis, and large-scale systems design. Gained practical experience across multiple programming languages including Java, Python, C++, and JavaScript.</p>
-                <p class="achievement">Academic Potential Scholarship - For academic achievement, demonstrated leadership potential and extracurricular achievements.</p>
+                <p class="date">March 2020 – September 2024</p>
+                <p class="education-description">A degree focused on software development, data analysis, and large-scale systems design, with practical experience across multiple programming languages including Java, Python, C++, and JavaScript.</p>
+                <p class="achievement">Academic Potential Scholarship: awarded for academic achievement, demonstrated leadership potential, and extracurricular accomplishments.</p>
               </div>
               <div class="education-image">
-                <img src="graduation.jpeg" alt="University of Auckland Graduation">
+                <img loading="lazy" decoding="async" src="graduation.jpeg" width="724" height="1086" alt="Quillan Denton at a University of Auckland graduation ceremony">
               </div>
             </div>
           </div>
@@ -154,33 +184,33 @@
           <div class="project-tile">
             <h3>Internal Data Coverage Tool</h3>
             <p class="tech-stack">S3, Real-time APIs, Python, RapidFuzz</p>
-            <p>A tool designed to consolidate data from multiple software sources, enabling users to efficiently search for securities, listings, indices, and exchanges covered by BMLL.</p>
+            <p>A tool that consolidates data from multiple sources, enabling users to quickly search the securities, listings, indices, and exchanges covered by BMLL.</p>
           </div>
 
           <div class="project-tile">
             <h3>Event Management Platform</h3>
             <p class="tech-stack">React, Node.js, DynamoDB, Real-time APIs, JavaScript</p>
-            <p>A free event management application, enabling users to create and join a variety of events. Led development of a scalable application with real-time data synchronisation, efficient API design, and database optimisation for multiple concurrent users.</p>
-            <a href="https://github.com/uoa-compsci399-s2-2023/capstone-project-team-27" target="_blank" class="project-link">View on GitHub</a>
+            <p>A free event management application that lets users create and join a variety of events. Led development of a scalable application with real-time data synchronisation, efficient API design, and database optimisation for multiple concurrent users.</p>
+            <a href="https://github.com/uoa-compsci399-s2-2023/capstone-project-team-27" target="_blank" class="project-link" rel="noopener noreferrer">View on GitHub</a>
           </div>
 
           <div class="project-tile">
             <h3>Image Analysis Software</h3>
             <p class="tech-stack">Python, TensorFlow, Matplotlib</p>
-            <p>Computer vision application for automated image processing and classification. Implemented algorithms for Gaussian smoothing, thresholding, morphological operations, and object detection using TensorFlow and Matplotlib.</p>
+            <p>A computer vision application for automated image processing and classification. Implemented algorithms for Gaussian smoothing, thresholding, morphological operations, and object detection using TensorFlow and Matplotlib.</p>
           </div>
 
           <div class="project-tile">
             <h3>Data Trend Analysis Tool</h3>
             <p class="tech-stack">Python, NumPy, Pandas, Matplotlib</p>
-            <p>Built Python application for numerical dataset analysis with statistical pattern detection and data visualisation.</p>
+            <p>A Python application for analysing numerical datasets, with statistical pattern detection and data visualisation.</p>
           </div>
 
           <div class="project-tile">
             <h3>Music Library Web Application</h3>
             <p class="tech-stack">Python, Flask, Jinja, SQL/SQLite, HTML/CSS</p>
-            <p>A Music Library web application for browsing albums, artists, and tracks. Implemented MVC and Repository design patterns for scalable architecture. Developed with comprehensive testing and SQL-based persistent storage.</p>
-            <a href="https://github.com/UoA-CS-Sindhwani-CS235-S2-2022/cs235_2022_assignment-qden138_jbau595" target="_blank" class="project-link">View on GitHub</a>
+            <p>A music library web application for browsing albums, artists, and tracks. Implemented the MVC and Repository design patterns for a scalable architecture, with comprehensive testing and SQL-based persistent storage.</p>
+            <a href="https://github.com/UoA-CS-Sindhwani-CS235-S2-2022/cs235_2022_assignment-qden138_jbau595" target="_blank" class="project-link" rel="noopener noreferrer">View on GitHub</a>
           </div>
         </div>
       </div>
@@ -192,7 +222,7 @@
         <div class="achievements-content">
           <div class="achievement-item featured">
             <div class="achievement-image">
-              <img src="victory.jpeg" alt="Choir of the World award ceremony">
+              <img loading="lazy" decoding="async" src="victory.jpeg" width="703" height="523" alt="Choir of the World award ceremony">
             </div>
             <div class="achievement-text">
               <h3>Choir of the World</h3>
@@ -205,13 +235,13 @@
             <h3>Academic Potential Scholarship</h3>
             <p class="organisation">The University of Auckland</p>
             <p class="date">December 2020</p>
-            <p>For academic achievement, demonstrated leadership potential and extracurricular achievements.</p>
+            <p>Awarded for academic achievement, demonstrated leadership potential, and extracurricular accomplishments.</p>
           </div>
           <div class="achievement-item">
             <h3>Sunshine Fund Grant</h3>
             <p class="organisation">Downtown Auckland Rotary Club</p>
             <p class="date">November 2022, October 2024</p>
-            <p>Monetary grants to fund performing arts pursuits.</p>
+            <p>Grants awarded to fund my performing arts pursuits.</p>
           </div>
         </div>
       </div>
@@ -226,15 +256,15 @@
               <div class="experience-text">
                 <h3>Tinā (2024) — Feature Film</h3>
                 <p class="company">Directed by Miki Magasiva</p>
-                <p class="date">2024 - 2025</p>
+                <p class="date">2024 – 2025</p>
               </div>
               <div class="experience-image">
-                <img src="tina.png" alt="Tinā Film">
+                <img loading="lazy" decoding="async" src="tina.jpg" width="1440" height="601" alt="Still from the film Tinā">
               </div>
             </div>
             <p><strong>Role:</strong> Choir Member (Soundtrack & On-Screen Performance)</p>
             <ul>
-              <li>Performed as part of the choir featured in the film's soundtrack and appeared on-screen as a member of the choir.</li>
+              <li>Sang with the choir featured on the film's soundtrack and appeared on screen as a choir member.</li>
               <li>Collaborated with production and music teams on vocal recordings and live performance sequences.</li>
             </ul>
             <p class="film-description"><em>Tinā</em> is a New Zealand drama film written and directed by Miki Magasiva, starring Anapela Polataivao, which premiered at the Hawaii International Film Festival (2024) and was released in cinemas (2025).</p>
@@ -245,16 +275,16 @@
               <div class="experience-text">
                 <h3>Choral Singer</h3>
                 <p class="company">Choirs Aotearoa New Zealand | Auckland, NZ</p>
-                <p class="date">2020 - 2025</p>
+                <p class="date">2020 – 2025</p>
               </div>
               <div class="experience-image">
-                <img src="nzyc.jpeg" alt="New Zealand Youth Choir">
+                <img loading="lazy" decoding="async" src="nzyc.jpeg" width="1024" height="768" alt="New Zealand Youth Choir">
               </div>
             </div>
             <p><strong>New Zealand Youth Choir</strong></p>
             <ul>
-              <li>Represented New Zealand internationally and collaborated with a plethora of artists, conductors, and composers.</li>
-              <li>Worked in collaboration with a team of professional choristers in regular rehearsals.</li>
+              <li>Represented New Zealand internationally and collaborated with a wide range of artists, conductors, and composers.</li>
+              <li>Rehearsed regularly alongside a team of professional choristers.</li>
             </ul>
           </div>
 
@@ -263,7 +293,7 @@
               <div class="experience-text">
                 <h3>Chorus Member & Performer</h3>
                 <p class="company">New Zealand Opera | Auckland, NZ</p>
-                <p class="date">2015 - 2017</p>
+                <p class="date">2015 – 2017</p>
               </div>
             </div>
             <ul>
@@ -279,50 +309,50 @@
         <h2 class="section-title">Gallery</h2>
         <p class="gallery-intro">A glimpse into my professional and musical journey.</p>
         <div class="gallery-grid">
-          <div class="gallery-item">
-            <img src="corporate.png" alt="Headshot">
+          <div class="gallery-item" tabindex="0" role="button">
+            <img loading="lazy" decoding="async" src="corporate.jpg" width="619" height="619" alt="Quillan Denton headshot">
             <div class="gallery-overlay">
-            <p>Quillan Denton</p>
+              <p>Quillan Denton</p>
             </div>
           </div>
-          <div class="gallery-item">
-            <img src="rehearsal.jpeg" alt="Barnsley & New Zealand Youth Choir Rehearsal">
+          <div class="gallery-item" tabindex="0" role="button">
+            <img loading="lazy" decoding="async" src="rehearsal.jpeg" width="1086" height="724" alt="Barnsley & New Zealand Youth Choir Rehearsal">
             <div class="gallery-overlay">
               <p>New Zealand Youth Choir Performance</p>
             </div>
           </div>
-          <div class="gallery-item">
-            <img src="barnsley.jpeg" alt="Barnsley & New Zealand Youth Choir Initial Meeting">
+          <div class="gallery-item" tabindex="0" role="button">
+            <img loading="lazy" decoding="async" src="barnsley.jpeg" width="1086" height="724" alt="Barnsley & New Zealand Youth Choir Initial Meeting">
             <div class="gallery-overlay">
               <p>Choir Rehearsal</p>
             </div>
           </div>
-          <div class="gallery-item">
-            <img src="bmll.jpeg" alt="BMLL Team">
+          <div class="gallery-item" tabindex="0" role="button">
+            <img loading="lazy" decoding="async" src="bmll.jpeg" width="1170" height="808" alt="BMLL Team">
             <div class="gallery-overlay">
               <p>BMLL Team</p>
             </div>
           </div>
-          <div class="gallery-item">
-            <img src="victory.jpeg" alt="Award Ceremony">
+          <div class="gallery-item" tabindex="0" role="button">
+            <img loading="lazy" decoding="async" src="victory.jpeg" width="703" height="523" alt="Choir of the World award ceremony">
             <div class="gallery-overlay">
               <p>Choir of the World 2025</p>
             </div>
           </div>
-          <div class="gallery-item">
-            <img src="performance.jpeg" alt="Recital">
+          <div class="gallery-item" tabindex="0" role="button">
+            <img loading="lazy" decoding="async" src="performance.jpeg" width="1024" height="768" alt="New Zealand Youth Choir recital at the Llangollen International Eisteddfod">
             <div class="gallery-overlay">
               <p>Llangollen International Eisteddfod Recital</p>
             </div>
           </div>
-          <div class="gallery-item">
-            <img src="trophy.jpeg" alt="Trophy">
+          <div class="gallery-item" tabindex="0" role="button">
+            <img loading="lazy" decoding="async" src="trophy.jpeg" width="724" height="1086" alt="Choir of the World trophy">
             <div class="gallery-overlay">
               <p>Llangollen International Eisteddfod Choir of the World Trophy</p>
             </div>
           </div>
-          <div class="gallery-item">
-            <img src="choir.jpeg" alt="Choir">
+          <div class="gallery-item" tabindex="0" role="button">
+            <img loading="lazy" decoding="async" src="choir.jpeg" width="1200" height="550" alt="New Zealand Youth Choir 2025 group photo">
             <div class="gallery-overlay">
               <p>New Zealand Youth Choir 2025</p>
             </div>
@@ -333,7 +363,7 @@
 
     <section id="contact">
       <div class="container">
-        <h2 class="section-title">Get In Touch</h2>
+        <h2 class="section-title">Get in Touch</h2>
         <div class="contact-content">
           <p>I'm always interested in hearing about new opportunities and collaborations.</p>
           <div class="contact-links">
@@ -347,17 +377,28 @@
         </div>
       </div>
     </section>
+    </main>
 
     <footer>
       <div class="container">
         <div class="footer-content">
-          <p>&copy; 2024 Quillan Denton. All rights reserved.</p>
+          <p>&copy; <span id="year">2026</span> Quillan Denton. All rights reserved.</p>
           <div class="social-links">
-            <a href="https://github.com/quintardicus" id="profile-link" target="_blank">GitHub</a>
-            <a href="https://www.linkedin.com/in/quillan-denton/" id="profile-link" target="_blank">LinkedIn</a>
+            <a href="https://github.com/quintardicus" target="_blank" rel="noopener noreferrer">GitHub</a>
+            <a href="https://www.linkedin.com/in/quillan-denton/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
           </div>
         </div>
       </div>
     </footer>
+
+    <div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Image viewer" hidden>
+      <button class="lightbox-close" aria-label="Close">&times;</button>
+      <button class="lightbox-nav lightbox-prev" aria-label="Previous image">&#8249;</button>
+      <figure>
+        <img src="" alt="">
+        <figcaption></figcaption>
+      </figure>
+      <button class="lightbox-nav lightbox-next" aria-label="Next image">&#8250;</button>
+    </div>
   </body>
 </html>
